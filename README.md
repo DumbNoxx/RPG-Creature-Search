@@ -1,8 +1,5 @@
 # 🧿 RPG Creature Search App / Buscador de Criaturas RPG
 
-> 🚧 Este proyecto está actualmente en construcción.  
-> 🚧 This project is currently under construction.
-
 ---
 
 ## 🌐 Descripción / Description
@@ -46,3 +43,57 @@ A web app that allows you to search for RPG creatures by name or ID using freeCo
 git clone https://github.com/tu-usuario/rpg-creature-search-app.git
 cd rpg-creature-search-app
 ```
+
+---
+
+## 📜 Monstruos en el Códice / Monsters in the Codex
+
+### 🇪🇸 Español
+
+A continuación, se muestra una lista de los monstruos disponibles en el códice:
+
+1. Pyrolynx
+2. Aquoroc
+3. Voltadon
+4. Floraspine
+5. Cryostag
+6. Terradon
+7. Emberapod
+8. Lunaclaw
+9. Quillquake
+10. Mystifin
+11. Dracilume
+12. Thornaconda
+13. Frostbyte
+14. Graviboa
+15. Zephyreon
+16. Blazebore
+17. Brontogale
+18. Shadeelisk
+19. Titanule
+20. Faegis
+
+### 🇬🇧 English
+
+Below is a list of the monsters available in the codex:
+
+1. Pyrolynx
+2. Aquoroc
+3. Voltadon
+4. Floraspine
+5. Cryostag
+6. Terradon
+7. Emberapod
+8. Lunaclaw
+9. Quillquake
+10. Mystifin
+11. Dracilume
+12. Thornaconda
+13. Frostbyte
+14. Graviboa
+15. Zephyreon
+16. Blazebore
+17. Brontogale
+18. Shadeelisk
+19. Titanule
+20. Faegis
