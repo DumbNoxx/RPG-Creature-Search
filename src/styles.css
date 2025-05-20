@@ -354,7 +354,7 @@ article {
 
 footer {
   max-width: 30rem;
-  margin: 2% auto;
+  margin: 30% auto -3rem auto;
   text-align: center;
   color: var(--color-base);
 }
