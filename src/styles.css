@@ -129,6 +129,9 @@ article {
   width: 100%;
   border-radius: 0.5rem;
 }
+.card-creature div:first-child {
+  color: var(--color-base);
+}
 
 .card-creature p {
   text-align: center;
@@ -305,51 +308,57 @@ article {
 
 .bar {
   margin-top: -0.8rem;
-  height: 0.5rem;
+  height: 0.75rem;
   border-radius: 0.5rem;
   background-color: var(--backgroung-color);
 }
 
 .hp {
-  height: 0.5rem;
+  height: 0.75rem;
   background-color: var(--hp-creature);
   border-radius: 0.5rem;
-  width: 30%;
+  width: 0;
+  transition: 2.5s linear;
 }
 
 .attack {
-  height: 0.5rem;
+  height: 0.75rem;
   background-color: var(--attack-creature);
   border-radius: 0.5rem;
-  width: 50%;
+  width: 0;
+  transition: 2.5s linear;
 }
 
 .defense {
-  height: 0.5rem;
+  height: 0.75rem;
   background-color: var(--defense-creature);
   border-radius: 0.5rem;
-  width: 70%;
+  width: 0;
+  transition: 2.5s linear;
 }
 
 .sp-attack {
-  height: 0.5rem;
+  height: 0.75rem;
   background-color: var(--special-attack-creature);
   border-radius: 0.5rem;
-  width: 60%;
+  width: 0;
+  transition: 2.5s linear;
 }
 
 .sp-defense {
-  height: 0.5rem;
+  height: 0.75rem;
   background-color: var(--special-defense-creature);
   border-radius: 0.5rem;
-  width: 90%;
+  width: 0;
+  transition: 2.5s linear;
 }
 
 .speed {
-  height: 0.5rem;
+  height: 0.75rem;
   background-color: var(--speed-creature);
   border-radius: 0.5rem;
-  width: 50%;
+  width: 0;
+  transition: 2.5s linear;
 }
 
 .svg {
