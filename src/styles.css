@@ -352,9 +352,24 @@ article {
   width: 50%;
 }
 
+.svg {
+  max-width: 60rem;
+  width: 8rem;
+  margin: 25% auto;
+}
+
+#pet {
+  position: absolute;
+  margin-top: 2rem;
+  margin-left: -5.5rem;
+}
+
+#gear {
+  animation: gearRotate 10s linear infinite;
+}
 footer {
   max-width: 30rem;
-  margin: 30% auto -3rem auto;
+  margin: 10% auto 0 auto;
   text-align: center;
   color: var(--color-base);
 }
@@ -381,6 +396,14 @@ footer {
   }
   100% {
     transform: scale(0.7);
+  }
+}
+@keyframes gearRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
@@ -419,5 +442,21 @@ footer {
   .stats-creature {
     width: 100%;
     margin-left: 2rem;
+  }
+  .svg {
+    margin: 8% auto;
+  }
+  #pet {
+    margin-top: -7.78rem;
+    margin-left: 2.54rem;
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+  #gear {
+    width: 10rem;
+    height: 10rem;
+  }
+  footer {
+    margin: 6% auto -3rem auto;
   }
 }
