@@ -127,7 +127,9 @@ article {
 .card-creature figure img {
   margin: 0 auto;
   width: 100%;
+  height: 50%;
   border-radius: 0.5rem;
+  overflow: hidden;
 }
 .card-creature div:first-child {
   color: var(--color-base);
@@ -152,6 +154,10 @@ article {
   width: 30%;
   height: 1.5rem;
   margin: 0 auto;
+}
+
+.type-creature p {
+  margin-top: 0;
 }
 
 .type-creature.fire {
@@ -231,9 +237,8 @@ article {
   display: flex;
   width: 100%;
   gap: 1rem;
-  height: 4rem;
   margin: 3% auto;
-  justify-content: center;
+  padding: 1rem;
 }
 
 .width {
@@ -266,6 +271,15 @@ article {
   color: var(--color-text-stats);
   font-weight: 400;
   font-size: 0.8rem;
+}
+
+#text-type {
+  display: flex;
+  flex-direction: row;
+}
+
+.skill-div {
+  padding: 1rem;
 }
 
 .stats-creature {
@@ -337,7 +351,7 @@ article {
   transition: 2.5s linear;
 }
 
-.sp-attack {
+.special-attack {
   height: 0.75rem;
   background-color: var(--special-attack-creature);
   border-radius: 0.5rem;
@@ -345,7 +359,7 @@ article {
   transition: 2.5s linear;
 }
 
-.sp-defense {
+.special-defense {
   height: 0.75rem;
   background-color: var(--special-defense-creature);
   border-radius: 0.5rem;
@@ -450,8 +464,8 @@ footer {
   }
   .stats-creature {
     width: 100%;
-    margin-left: 2rem;
   }
+
   .svg {
     margin: 8% auto;
   }
