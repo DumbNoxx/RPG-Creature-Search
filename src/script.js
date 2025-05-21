@@ -80,7 +80,7 @@ const creatureData = (data) => {
 
   // Dynamically set the image source based on the creature's name.
   // The image is expected to be located in the public/assets directory.
-  img.src = `../public/assets/${isNaN(input.value) ? name : name}.png`;
+  img.src = `./assets/${name}.png`;
 
   // Append height and weight details to their respective elements.
   // The height is converted from decimeters to meters, and the weight
