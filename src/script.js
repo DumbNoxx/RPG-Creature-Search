@@ -96,6 +96,7 @@ const creatureData = (data) => {
 
   // Populate the stats section with bars representing each stat.
   // Each bar's width is dynamically adjusted based on the stat value.
+
   statsCreature.innerHTML += stats
     .map((item) => {
       const { name, base_stat } = item;
@@ -104,7 +105,7 @@ const creatureData = (data) => {
         <div class="statss">
           <div class="text-stats">
             <p>${name}</p>
-            <p>${base_stat}</p>
+            <p class="number-stat">${base_stat}</p>
           </div>
             <div class="bar">
               <div class="${name}" id="${name}"></div>
@@ -123,7 +124,7 @@ const creatureData = (data) => {
       if (stat.base_stat > 100) stat.base_stat -= stat.base_stat % 100; // Normalize stat values
       if (bar) bar.style.width = `${stat.base_stat}%`; // Set bar width
     });
-  }, 2000);
+  }, 1300);
 
   // Populate the types section with the creature's types.
   // Each type is displayed as a styled div with the type name in uppercase.
@@ -150,6 +151,7 @@ const searchCreature = () => {
   svg.style.display = "block"; // Show loading SVG
   searchText.style.display = "block"; // Show search text
   img.src = "https://placehold.co/1024x1536";
+
   // Reset dynamic content
   textType.innerHTML = "";
   statsCreature.innerHTML = "";
@@ -169,6 +171,7 @@ const searchCreature = () => {
  * and clears dynamic content to restore the interface to its default state.
  */
 const reset = () => {
+  input.value = "";
   card.style.display = "none";
   footer.style.marginTop = "";
   svg.style.display = "block";
@@ -202,6 +205,7 @@ const search = async () => {
     creatureData(data); // Populate the UI with the fetched data
     input.value = ""; // Clear the input field
   } catch (err) {
+    reset();
     alert("Creature not found"); // Show an error alert if the creature is not found
     return false;
   }

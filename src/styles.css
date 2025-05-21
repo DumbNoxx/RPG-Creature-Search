@@ -129,10 +129,6 @@ article {
   width: 100%;
   height: 50%;
   border-radius: 0.5rem;
-  overflow: hidden;
-}
-.card-creature div:first-child {
-  color: var(--color-base);
 }
 
 .card-creature p {
@@ -162,6 +158,7 @@ article {
 
 .type-creature.fire {
   background-color: var(--type-fire-creature);
+  color: var(--color-base);
 }
 
 .type-creature.water {
@@ -171,6 +168,7 @@ article {
 
 .type-creature.rock {
   background-color: var(--type-rock-creature);
+  color: var(--color-base);
 }
 
 .type-creature.electric {
@@ -180,6 +178,7 @@ article {
 
 .type-creature.dragon {
   background-color: var(--type-dragon-creature);
+  color: var(--color-base);
 }
 
 .type-creature.grass {
@@ -189,6 +188,7 @@ article {
 
 .type-creature.poison {
   background-color: var(--type-poison-creature);
+  color: var(--color-base);
 }
 
 .type-creature.ice {
@@ -203,9 +203,10 @@ article {
 
 .type-creature.ground {
   background-color: var(--type-ground-creature);
+  color: var(--color-base);
 }
 
-.type-creature.flygin {
+.type-creature.flying {
   background-color: var(--type-flygin-creature);
   color: black;
 }
@@ -217,6 +218,7 @@ article {
 
 .type-creature.dark {
   background-color: var(--type-dark-creature);
+  color: var(--color-base);
 }
 
 .type-creature.psychic {
@@ -231,6 +233,7 @@ article {
 
 .type-creature.ghost {
   background-color: var(--type-ghost-creature);
+  color: var(--color-base);
 }
 
 .body-creature {
@@ -280,6 +283,7 @@ article {
 
 .skill-div {
   padding: 1rem;
+  color: var(--color-base);
 }
 
 .stats-creature {
@@ -468,6 +472,7 @@ footer {
   }
   .skill-div {
     position: absolute;
+    max-width: 20rem;
     margin-left: 28rem;
     margin-top: -20rem;
     width: 23%;
