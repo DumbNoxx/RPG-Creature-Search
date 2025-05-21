@@ -77,10 +77,10 @@ const dataSkill = (data) => {
  */
 const creatureData = (data) => {
   const { stats, types, weight, height, id, name } = data;
+  img.src = `./assets/${name}.png`;
 
   // Dynamically set the image source based on the creature's name.
   // The image is expected to be located in the public/assets directory.
-  img.src = `./assets/${name}.png`;
 
   // Append height and weight details to their respective elements.
   // The height is converted from decimeters to meters, and the weight
@@ -92,6 +92,7 @@ const creatureData = (data) => {
   // The ID is formatted with a leading zero for consistency.
   creatureName.textContent = name;
   creatureId.textContent = `#0${id}`;
+  dataSkill(data);
 
   // Populate the stats section with bars representing each stat.
   // Each bar's width is dynamically adjusted based on the stat value.
@@ -148,7 +149,7 @@ const searchCreature = () => {
   footer.style.marginTop = ""; // Reset footer margin
   svg.style.display = "block"; // Show loading SVG
   searchText.style.display = "block"; // Show search text
-
+  img.src = "https://placehold.co/1024x1536";
   // Reset dynamic content
   textType.innerHTML = "";
   statsCreature.innerHTML = "";
